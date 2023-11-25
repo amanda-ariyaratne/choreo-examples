@@ -12,7 +12,8 @@ type Property record {|
 
 enum Type {
     BOOKING_CONFIRMED = "Booking Confirmed",
-    VACCINATION_ALERT = "Vaccination Alert"
+    VACCINATION_ALERT = "Vaccination Alert",
+    MARKETING_LEAD = "Marketing Lead"
 }
 
 type EmailType BOOKING_CONFIRMED|VACCINATION_ALERT;

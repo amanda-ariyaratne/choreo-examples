@@ -9,6 +9,7 @@ configurable string emailUsername = "admin";
 configurable string emailPassword = "admin";
 const string bookingConfirmedEmailTemplate = "/home/ballerina/resources/email-templates/booking_confirmation.html";
 const string vaccinationAlertEmailTemplate = "/home/ballerina/resources/email-templates/vaccination_alert.html";
+const string marketingLeadEmailTemplate = "/home/ballerina/resources/email-templates/marketing-lead.html";
 
 map<string> emailTemplates = {};
 
@@ -76,6 +77,9 @@ function getEmailContent(string emailType, Property[] properties) returns string
         }
         VACCINATION_ALERT => {
             emailTemplateFilePath = vaccinationAlertEmailTemplate;
+        }
+        MARKETING_LEAD => {
+            emailTemplateFilePath = marketingLeadEmailTemplate;
         }
         _ => {
             return error("Unsupported email type found");
