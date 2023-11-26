@@ -5,3 +5,7 @@ target="/home/ballerina/resources/email-templates/booking_confirmation.html"
 [[container.copy.files]]
 sourceFile="./resources/email-templates/vaccination_alert.html"
 target="/home/ballerina/resources/email-templates/vaccination_alert.html"
+
+[[container.copy.files]]
+sourceFile="./resources/email-templates/marketing-lead.html"
+target="/home/ballerina/resources/email-templates/marketing-lead.html"
